@@ -40,5 +40,11 @@ public class Point3D extends Point2D {
 
         Point3D p = new Point3D(3.0f, 4.0f, 5.0f);
         System.out.println(p);
+
+        p.setXYZ(1.1f, 2.2f, 3.3f);
+
+        float[] coords = p.getXYZ();
+        System.out.println("Tọa độ: (" + coords[0] + ", " + coords[1] + ", " + coords[2] + ")");
+        System.out.println("In bằng toString: " + p);
     }
 }
