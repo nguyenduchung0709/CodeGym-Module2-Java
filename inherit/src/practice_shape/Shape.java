@@ -40,10 +40,10 @@ public class Shape {
     }
 
 //    public static void main(String[] args) {
-//        Shape shape = new Shape();
+//        shape_and_triangle.Shape shape = new shape_and_triangle.Shape();
 //        System.out.println(shape);
 //
-//        shape = new Shape("red", false);
+//        shape = new shape_and_triangle.Shape("red", false);
 //        System.out.println(shape);
 //    }
 }
