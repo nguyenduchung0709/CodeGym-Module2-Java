@@ -1,11 +1,11 @@
-import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
-
+import org.junit.jupiter.api.DisplayName;
 import static org.junit.jupiter.api.Assertions.*;
+
 public class CalculatorTest {
     @Test
     @DisplayName("Testing addition")
-    void testCalculateAdd() {
+    public void testCalculateAdd() {
         int firstOperand = 1;
         int secondOperand = 1;
         char operator = '+';
@@ -17,7 +17,7 @@ public class CalculatorTest {
 
     @Test
     @DisplayName("Testing subtraction")
-    void testCalculateSub() {
+    public void testCalculateSub() {
         int firstOperand = 2;
         int secondOperand = 1;
         char operator = '-';
@@ -29,7 +29,7 @@ public class CalculatorTest {
 
     @Test
     @DisplayName("Testing multiplication")
-    void testCalculateMul() {
+    public void testCalculateMul() {
         int firstOperand = 2;
         int secondOperand = 2;
         char operator = '*';
@@ -41,7 +41,7 @@ public class CalculatorTest {
 
     @Test
     @DisplayName("Testing division")
-    void testCalculateDiv() {
+    public void testCalculateDiv() {
         int firstOperand = 6;
         int secondOperand = 3;
         char operator = '/';
@@ -53,23 +53,23 @@ public class CalculatorTest {
 
     @Test
     @DisplayName("Testing division by zero")
-    void testCalculateDivByZero() {
+    public void testCalculateDivByZero() {
         int firstOperand = 2;
         int secondOperand = 0;
         char operator = '/';
 
         assertThrows(RuntimeException.class,
-                ()-> {Calculator.calculate(firstOperand, secondOperand, operator);});
+                () -> Calculator.calculate(firstOperand, secondOperand, operator));
     }
 
     @Test
     @DisplayName("Testing wrong operator")
-    void testCalculateWrongOperator() {
+    public void testCalculateWrongOperator() {
         int firstOperand = 2;
         int secondOperand = 0;
         char operator = '=';
 
         assertThrows(RuntimeException.class,
-                ()-> {Calculator.calculate(firstOperand, secondOperand, operator);});
+                () -> Calculator.calculate(firstOperand, secondOperand, operator));
     }
 }
