@@ -1,3 +1,5 @@
+package thuc_hanh_trien_khai_list;
+
 import java.util.Arrays;
 
 public class MyList<E> {
