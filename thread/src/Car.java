@@ -1,5 +1,3 @@
-package racing_cars;
-
 import java.util.Random;
 
 public class Car implements Runnable {
